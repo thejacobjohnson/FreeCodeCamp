@@ -3,9 +3,63 @@
   <head>
   </head>
   <body>
-    <h1 id="title">Survey Form</h1>
+    <h1 id="title">Super Survey</h1>
     <p id="description">This is a short survey to gather information about favorite super hero powers.</p>
     <form id="survey-form">
+     <div id="user-info" class="formarea"> 
+      <label for="name" id="name-label">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your full name: John Smith"/>
+      <label for="email" id="email-label">Email</label>
+      <input type="email" id="email" placeholder="Enter your email: example@gmail.com"/>
+      <label for="number" id="number-label">Age</label>
+      <input type="number" id="number" min=8 max=120 placeholder="Enter your age, must be between 8 and 120"/>
+      <label for="dropdown" id="dropdown-lable">Select Your Favorite Super Power</label>
+      <select name="dropdown" id="dropdown">
+        <option value="Flight">Flight</option>
+        <option value="Vision">Super Vision</option>
+        <option value="Strength">Strength</option>
+        <option value="Speed">Speed</option>
+        <option value="Intelligence">Intelligence</option>
+      </select>
+      </div>
+      <div id="universe" class="formarea">
+        <h2 id="universe-header">What Universe Is Your Favorite?</h2>
+        <label for="Marvel">Marvel</label>
+        <input type="radio" name="universe" id="Marvel" value="Marvel"/>
+        <label for="DC">DC</label>
+        <input type="radio" name="universe" id="DC" value="DC"/>
+        <label for="Hidden World">Hidden World</label>
+        <input type="radio" name="universe" id="Hidden World" value="Hidden World"/>
+        <label for="Other">Other</label>
+        <input type="radio" name="universe" id="Other" value="Other"/>
+      </div>
+      <h2 id="heros">Select Your Favorite Heros</h2>
+      <div id="heros" class="formarea">
+        <label for="checkbox1">Batman</label>
+        <input type="checkbox" value="Batman" id="checkbox1" />
+        <label for="checkbox2">Superman</label>
+        <input type="checkbox" value="Superman" id="checkbox2" />
+        <label for="checkbox3">Iron Man</label>
+        <input type="checkbox" value="Ironman" id="checkbox3" />
+        <label for="checkbox4">Captain America</label>
+        <input type="checkbox" value="Captain America" id="checkbox4" />
+        <label for="checkbox5">Hawkeye</label>
+        <input type="checkbox" value="Hawkeye" id="checkbox5" />
+        <label for="checkbox6">Black Widow</label>
+        <input type="checkbox" value="Black Widow" id="checkbox6" />
+        <label for="checkbox7">Wonder Woman</label>
+        <input type="checkbox" value="Wonder Woman" id="checkbox7" />
+        <label for="checkbox8">Flash</label>
+        <input type="checkbox" value="Flash" id="checkbox8" />
+        <label for="checkbox9">Green Lantern</label>
+        <input type="checkbox" value="Green Lantern" id="checkbox9" />
+        <label for="checkbox10">Thor</label>
+        <input type="checkbox" value="Thor" id="checkbox10" />
+      </div>
+      <h2>Any Additional Thoughts?</h2>
+      <textarea placeholder="Any additional thoughts?"></textarea>
+      <h2>Thanks!</h2>
+      <input type="submit" id="submit" />
     </form>
   </body>
 </html>
