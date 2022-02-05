@@ -13,58 +13,43 @@ h2 {
 
 input:invalid {
   color: red;
-  font-weight: 600;
 }
 
 .selectGrid {
   display: grid;
+  grid-template-areas:
+    "1 2 3 4"
+    "5 6 7 8"
+    "9 10 11 12";
 }
 
 #selectGrid1 {
-  grid-column: 1;
-  grid-row: 1;
+  grid-area: 1;
 }
 #selectGrid2 {
-  grid-column: 2;
-  grid-row: 1;
+  grid-area: 2;
 }
 #selectGrid3 {
-  grid-column: 3;
-  grid-row: 1;
+  grid-area: 3;
 }
 #selectGrid4 {
-  grid-column: 4;
-  grid-row: 1;
+  grid-area: 4;
 }
 #selectGrid5 {
-  grid-column: 1;
-  grid-row: 2;
+  grid-area: 5;
 }
 #selectGrid6 {
-  grid-column: 2;
-  grid-row: 2;
+  grid-area: 6;
 }
 #selectGrid7 {
-  grid-column: 3;
-  grid-row: 2;
+  grid-area: 7;
 }
 #selectGrid8 {
-  grid-column: 4;
-  grid-row: 2;
+  grid-area: 8;
 }
 #selectGrid9 {
-  grid-column: 1;
-  grid-row: 3;
+  grid-area: 9;
 }
 #selectGrid10 {
-  grid-column: 2;
-  grid-row: 3;
-}
-#selectGrid11 {
-  grid-column: 3/5;
-  grid-row: 3;
-}
-
-textarea {
-  max-width: 50em;
+  grid-area: 10;
 }
