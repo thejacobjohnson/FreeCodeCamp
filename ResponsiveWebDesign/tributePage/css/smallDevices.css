@@ -1,0 +1,9 @@
+#tribute-info {
+  display: grid;
+  grid-template-areas:
+    "a"
+    "b"
+    "c"
+    "g";
+  place-items: center;
+}
