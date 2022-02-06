@@ -1,3 +1,7 @@
+a {
+  color: #ffffff;
+}
+
 body {
   background-image: linear-gradient(#550000, #666666, #000055);
   height: 100%;
@@ -5,6 +9,11 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #ffffff;
+}
+
+footer {
+  margin: 0px;
+  padding: 20px 40px;
 }
 
 h2 {
@@ -16,7 +25,18 @@ input:invalid {
   font-weight: 600;
 }
 
-.selectGrid {
+main {
+  margin: 50px;
+}
+
+nav {
+  margin: 0px;
+  padding: 20px 40px;
+  color: #ffffff;
+  background-color: #333333;
+}
+
+.formarea {
   display: grid;
 }
 
@@ -67,4 +87,14 @@ input:invalid {
 
 textarea {
   max-width: 50em;
+  min-width: 25em;
+  min-height: 10em;
+}
+
+#universe {
+  grid-template-columns: 1fr 1fr;
+}
+
+#universe-header {
+  grid-column: 1/3;
 }
