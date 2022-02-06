@@ -13,17 +13,13 @@ body {
   font-size: larger;
 }
 
-#number {
-  min-width: 21em;
-}
-
 footer {
   margin: 0px;
   padding: 20px 40px;
 }
 
-#intro {
-  text-align: center;
+.formarea {
+  display: grid;
 }
 
 h2 {
@@ -34,6 +30,20 @@ h2 {
 input:invalid {
   color: red;
   font-weight: 600;
+}
+
+#intro {
+  padding: 30px;
+  text-align: center;
+  background-image: linear-gradient(
+    rgba(83, 25, 25, 0.9),
+    rgba(87, 44, 44, 0.6)
+  );
+}
+
+#intro-background {
+  margin: auto auto 30px auto;
+  background-image: url(images/heroSkyline.jpg);
 }
 
 main {
@@ -47,8 +57,8 @@ nav {
   background-color: #333333;
 }
 
-.formarea {
-  display: grid;
+#number {
+  min-width: 21em;
 }
 
 #selectGrid1 {
